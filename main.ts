@@ -1,6 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
     signal = radio.receivedPacket(RadioPacketProperty.SignalStrength)
-    basic.showNumber(receivedNumber)
     if (signal < -90) {
         basic.showIcon(IconNames.SmallDiamond)
     } else if (signal < -80) {
